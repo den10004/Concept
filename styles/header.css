@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+}
+
+.header-max {
+  background-color: #070b1d;
+}
+
+.wrapper-max {
+  width: 1920px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1920px) {
+  .wrapper-max {
+    width: 95%;
+  }
+}
+
+.header-max-right__list {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #00b2ff;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.header-max-right__list > button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}

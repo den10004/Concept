@@ -4,3 +4,10 @@
   font-weight: 500;
   src: url("./fonts/Roboto-Medium.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: bold;
+  font-weight: 700;
+  src: url("./fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+}

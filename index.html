@@ -11,6 +11,172 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>Concent</header>
+    <header>
+      <!--
+      <div class="header-max">
+        <div class="wrapper-max">
+          <div class="header-max-left">
+            <img src="./images/logo.png" alt="logo" />
+          </div>
+
+          <div class="header-max-middle">
+            <img src="./images/background.png" alt="background" />
+          </div>
+
+          <div class="header-max-right">
+            <ul class="header-max-right__list">
+              <button>
+                <img src="./images/menu.png" />
+              </button>
+              <li>Just Magic</li>
+              <li>Блог</li>
+              <li>Тарифы</li>
+              <li>Создатели</li>
+              <li>Регистрация</li>
+            </ul>
+          </div>
+        </div>
+      </div>-->
+    </header>
+
+    <section class="know">
+      <div class="know__headline">
+        <h2>ЧТО УМЕЕТ JUST MAGIC?</h2>
+        <img src="./images/marker.png" alt="marker" />
+      </div>
+
+      <!-- max-->
+      <div class="tabs">
+        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
+        <label for="tab-btn-1"> Собирать семантику </label>
+
+        <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
+        <label for="tab-btn-2">Фильтровать и чистить семантику</label>
+
+        <input type="radio" name="tab-btn" id="tab-btn-3" value="" />
+        <label for="tab-btn-3">Кластеризовать</label>
+
+        <input type="radio" name="tab-btn" id="tab-btn-4" value="" />
+        <label for="tab-btn-4">Анализировать тексты</label>
+
+        <input type="radio" name="tab-btn" id="tab-btn-5" value="" />
+        <label for="tab-btn-5">Собирать позиции</label>
+
+        <div id="content-1">
+          <ul class="content-list">
+            <li>парсинг wordstat</li>
+            <li>парсинг поисковых подсказок</li>
+            <li>пазы для расширения</li>
+          </ul>
+        </div>
+        <div id="content-2">
+          <ul class="content-list">
+            <li>текст</li>
+          </ul>
+        </div>
+        <div id="content-3">
+          <ul class="content-list">
+            <li>текст2</li>
+          </ul>
+        </div>
+        <div id="content-4">
+          <ul class="content-list">
+            <li>текст3</li>
+          </ul>
+        </div>
+        <div id="content-5">
+          <ul class="content-list">
+            <li>текст4</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-------------min-------------------->
+
+      <div class="wrap">
+        <div class="container" style="margin-top: 15px">
+          <div class="expertCard__accordion">
+            <div class="expertCard__accordion-label">Собирать семантику</div>
+          </div>
+          <div class="answercont">
+            <ul class="content-list">
+              <li>парсинг wordstat</li>
+              <li>парсинг поисковых подсказок</li>
+              <li>пазы для расширения</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container" style="margin-top: 15px">
+          <div class="expertCard__accordion">
+            <div class="expertCard__accordion-label">
+              Фильтровать и чистить семантику
+            </div>
+          </div>
+          <div class="answercont">
+            <ul class="content-list">
+              <li>парсинг wordstat</li>
+              <li>парсинг поисковых подсказок</li>
+              <li>пазы для расширения</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container" style="margin-top: 15px">
+          <div class="expertCard__accordion">
+            <div class="expertCard__accordion-label">Кластеризовать</div>
+          </div>
+          <div class="answercont">
+            <ul class="content-list">
+              <li>парсинг wordstat</li>
+              <li>парсинг поисковых подсказок</li>
+              <li>пазы для расширения</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container" style="margin-top: 15px">
+          <div class="expertCard__accordion">
+            <div class="expertCard__accordion-label">Анализировать тексты</div>
+          </div>
+          <div class="answercont">
+            <ul class="content-list">
+              <li>парсинг wordstat</li>
+              <li>парсинг поисковых подсказок</li>
+              <li>пазы для расширения</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container" style="margin-top: 15px">
+          <div class="expertCard__accordion">
+            <div class="expertCard__accordion-label">Собирать позиции</div>
+          </div>
+          <div class="answercont">
+            <ul class="content-list">
+              <li>парсинг wordstat</li>
+              <li>парсинг поисковых подсказок</li>
+              <li>пазы для расширения</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--------->
+    </section>
   </body>
+
+  <script>
+    let question = document.querySelectorAll(".expertCard__accordion");
+
+    question.forEach((question) => {
+      question.addEventListener("click", () => {
+        const active = document.querySelector(".expertCard__accordion.active");
+
+        question.classList.toggle("active");
+        const answer = question.nextElementSibling;
+        if (question.classList.contains("active")) {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        } else {
+          answer.style.maxHeight = 0;
+        }
+      });
+    });
+  </script>
 </html>
