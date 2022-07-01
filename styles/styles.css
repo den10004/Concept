@@ -1,6 +1,8 @@
 @import "./header.css";
 @import "./know.css";
 @import "./access.css";
+@import "./why.css";
+@import "./tarif.css";
 
 @import "./normalize.css";
 @import "../vendor/fonts.css";
@@ -38,5 +40,35 @@ body {
     width: 156px;
     height: 39px;
     font-size: 10px;
+  }
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+}
+
+.headline > h2 {
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  font-size: 40px;
+  color: #070b1d;
+}
+
+@media screen and (max-width: 550px) {
+  .headline > h2 {
+    font-size: 18px;
+  }
+}
+
+.headline > img {
+  width: 19px;
+  height: 19px;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 550px) {
+  .headline > img {
+    margin-left: 15px;
   }
 }

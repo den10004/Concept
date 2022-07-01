@@ -1,0 +1,10 @@
+.tarif {
+  max-width: 1430px;
+  margin: 100px auto 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .tarif {
+    width: 95%;
+  }
+}
