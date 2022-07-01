@@ -67,7 +67,14 @@
 #tab-btn-3:checked ~ #content-3,
 #tab-btn-4:checked ~ #content-4,
 #tab-btn-5:checked ~ #content-5 {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  margin-top: 45px;
+}
+
+.image > img {
+  width: 60%;
 }
 
 .tabs > label {
