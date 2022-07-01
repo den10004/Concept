@@ -1,0 +1,97 @@
+.access {
+  margin-top: 70px;
+  width: 100%;
+  background-color: #070b1d;
+  height: 217px;
+  display: flex;
+  align-items: center;
+}
+
+.access__wrapper {
+  width: 1163px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .access__wrapper {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .access__wrapper {
+    height: 173px;
+    width: 90%;
+  }
+}
+
+.access__wrapper-middle {
+  display: flex;
+  align-items: center;
+  width: 1072px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1280px) {
+  .access__wrapper-middle {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .access__wrapper-middle {
+    flex-direction: column;
+  }
+}
+
+.access__wrapper-middle > h3 {
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  font-size: 40px;
+  color: #00b2ff;
+}
+
+@media screen and (max-width: 1280px) {
+  .access__wrapper-middle > h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .access__wrapper-middle > h3 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .access__wrapper-middle > h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.access__wrapper-last {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .access__wrapper-last {
+    display: block;
+  }
+}
+
+.rectangle {
+  width: 46px;
+  height: 23px;
+}
+
+@media screen and (max-width: 768px) {
+  .rectangle {
+    width: 19px;
+    height: 10px;
+  }
+}

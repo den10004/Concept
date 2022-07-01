@@ -1,5 +1,6 @@
 @import "./header.css";
 @import "./know.css";
+@import "./access.css";
 
 @import "./normalize.css";
 @import "../vendor/fonts.css";
@@ -14,4 +15,28 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.button {
+  width: 338px;
+  height: 85px;
+  background-color: #00b2ff;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #070b1d;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 156px;
+    height: 39px;
+    font-size: 10px;
+  }
 }
