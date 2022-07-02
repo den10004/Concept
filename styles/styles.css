@@ -3,9 +3,13 @@
 @import "./access.css";
 @import "./why.css";
 @import "./tarif.css";
+@import "./blog.css";
+@import "./experts.css";
+@import "./brands.css";
 
 @import "./normalize.css";
 @import "../vendor/fonts.css";
+@import "./swiper-bundle.css";
 
 body {
   margin: 0 auto;
@@ -46,6 +50,7 @@ body {
 .headline {
   display: flex;
   align-items: center;
+  width: 500px;
 }
 
 .headline > h2 {
@@ -71,4 +76,20 @@ body {
   .headline > img {
     margin-left: 15px;
   }
+}
+
+.link {
+  text-decoration: none;
+  color: #00b2ff;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  color: #070b1d;
 }

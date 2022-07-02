@@ -16,9 +16,10 @@
   grid-column-gap: 60px;
   grid-row-gap: 40px;
   margin-top: 70px;
+  width: 100%;
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1450px) {
   .why__blocks {
     grid-column-gap: 20px;
   }

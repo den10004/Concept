@@ -1,0 +1,124 @@
+.blog {
+  max-width: 1440px;
+  margin: 100px auto 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .blog {
+    width: 95%;
+  }
+}
+/*
+.blog__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin-top: 70px;
+}
+
+.blog__main-block1 {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.blog__main-block2 {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.blog__main-block3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.blog__main-block4 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.blocktext > h3 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.blocktext > p {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+.blog__main-block-link {
+  text-decoration: none;
+  color: #00b2ff;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.blog__main-block-link:hover {
+  text-decoration: underline;
+}
+
+.blog__main-block-link:active {
+  color: #070b1d;
+}
+
+.blockImg > img {
+  width: 100%;
+  height: auto;
+}
+*/
+.blog__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+  margin-top: 70px;
+}
+
+.blog__main-left {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.blog__main-right {
+  grid-area: 1 / 2 / 3 / 4;
+}
+
+.blockImg {
+  width: 100%;
+  height: auto;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexContainer2 {
+  display: flex;
+  margin-top: 15px;
+}
+
+.blog__main-right-content > h3 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.blog__main-right-content > p {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog__main-right-content > h3 {
+    font-size: 14px;
+  }
+  .blog__main-right-content > p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}

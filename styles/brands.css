@@ -1,0 +1,10 @@
+.brands {
+  max-width: 1440px;
+  margin: 100px auto 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .brands {
+    width: 95%;
+  }
+}
