@@ -1,0 +1,78 @@
+.creator {
+  max-width: 1440px;
+  margin: 100px auto 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .creator {
+    width: 95%;
+  }
+}
+
+.creator__block {
+  display: grid;
+  grid-template-columns: repeat(3, 460px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 63px auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .creator__block {
+    grid-template-columns: repeat(3, 289px);
+    width: 907px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .creator__block {
+    grid-template-columns: repeat(2, 289px);
+    width: 598px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .creator__block {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .creator__block {
+    grid-template-columns: repeat(1, 289px);
+    width: 289px;
+  }
+}
+
+.creator__block-card {
+  width: 460px;
+}
+
+@media screen and (max-width: 1500px) {
+  .creator__block-card {
+    width: 289px;
+  }
+}
+
+.creator__block-card > img {
+  width: 100%;
+}
+
+.creator__block-card-text {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  color: #070b1d;
+  line-height: 150%;
+  margin-top: 28px;
+}
+
+.creator__block-card-links {
+  display: flex;
+  margin-top: 23px;
+}
+
+.creator__block-card-links > a {
+  margin-right: 15px;
+  cursor: pointer;
+}
