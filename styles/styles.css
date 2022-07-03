@@ -6,6 +6,7 @@
 @import "./blog.css";
 @import "./experts.css";
 @import "./brands.css";
+@import "./demo.css";
 
 @import "./normalize.css";
 @import "../vendor/fonts.css";
@@ -51,6 +52,11 @@ body {
   display: flex;
   align-items: center;
   width: 500px;
+}
+@media screen and (max-width: 550px) {
+  .headline {
+    width: 95%;
+  }
 }
 
 .headline > h2 {

@@ -1,0 +1,152 @@
+.demo {
+  margin-top: 160px;
+  width: 100%;
+  background-color: #070b1d;
+  height: 438px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .demo {
+    height: 254px;
+  }
+}
+
+.demo__wrapper {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 1450px) {
+  .demo__wrapper {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .demo__wrapper {
+    width: 90%;
+  }
+}
+
+.demo__wrap {
+  width: 420px;
+}
+
+@media screen and (max-width: 768px) {
+  .demo__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.demo__headline {
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .demo__headline {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.demo__headline > h2 {
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .demo__headline > h2 {
+    color: #00b2ff;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .demo__headline > h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .demo__headline > h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .marker {
+    display: none;
+  }
+}
+
+.demo__wrap > h3 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 30px 0 30px 0;
+  line-height: 150%;
+  text-align: start;
+}
+
+@media screen and (max-width: 425px) {
+  .demo__wrap > h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .demo__wrap > h3 {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .demo__wrap > button {
+    margin: 0 auto;
+  }
+}
+
+.demo__marker {
+  transform: rotate(180deg);
+  width: 19px;
+  height: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .demo__marker {
+    display: block;
+  }
+}
+
+.demo__img {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1279px) {
+  .demo__img {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .demo__img {
+    display: none;
+  }
+}
