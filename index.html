@@ -472,7 +472,6 @@
             делать выводов о закономерностях или корреляциях на единичных
             примерах.
           </p>
-          <a class="blog__main-block-link" href="/">читать больше >>></a>
         </div>
         <div class="blog__main-block blocktext">
           <h3>ИКС-фактор: аномалии и крайние случаи.</h3>
@@ -483,7 +482,6 @@
             делать выводов о закономерностях или корреляциях на единичных
             примерах.
           </p>
-          <a class="blog__main-block-link" href="/">читать больше >>></a>
         </div>
       </div>
     </section>
@@ -552,15 +550,100 @@
     </section>
 
     <section class="brands">
-      <div class="headline">
+      <div class="headline b">
         <h2>БРЕНДЫ, КОТОРЫЕ НАМ ДОВЕРЯЮТ</h2>
         <img src="./images/marker.png" alt="marker" />
       </div>
-
-      <div class="brands__logos">
-        <img class="sd" src="./images/Detskiymir.svg" />
-      </div>
     </section>
+    <div class="swiper brandsSwiper brands__logos">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/1.png" alt="war-gaming" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/2.png" alt="demis-group" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/3.png" alt="detsty-mir" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/4.png" alt="2-gis" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/5.png" alt="kupi-slova" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/6.png" alt="optimism.ru" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/7.png" alt="u-money" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/8.png" alt="sravni" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/9.png" alt="mgcom" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/10.png" alt="kokos" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/11.png" alt="cian" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/12.png" alt="fonbet" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/13.png" alt="legalbet" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/14.png" alt="banki.ru" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/15.png" alt="mts-bank" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/16.png" alt="mts" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brands__slider">
+            <img src="./images/17.png" alt="sports.ru" />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="demo">
       <div class="demo__wrapper">
@@ -719,6 +802,13 @@
           slidesPerView: 2,
         },
       },
+    });
+
+    var swiper = new Swiper(".brandsSwiper", {
+      loop: true,
+      slidesPerView: "auto",
+      spaceBetween: 50,
+      centeredSlides: false,
     });
   </script>
 </html>

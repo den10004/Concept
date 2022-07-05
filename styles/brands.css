@@ -9,6 +9,26 @@
   }
 }
 
-.sd {
-  fill: black;
+.brands__logos {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .brands__logos {
+    margin-top: 40px;
+  }
+}
+
+.brands__slider {
+  text-align: center;
+  width: auto;
+}
+
+.brandsSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.brandsSwiper .swiper-slide {
+  width: auto;
 }
