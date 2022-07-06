@@ -67,8 +67,6 @@
 .tabs {
   font-size: 0;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 70px;
 }
 
@@ -114,7 +112,6 @@
   font-family: "Roboto";
   font-weight: 700;
   font-size: 24px;
-  text-align: left;
   color: #a6a6a6;
   padding: 0 5px 0 5px;
 }
