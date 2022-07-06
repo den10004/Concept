@@ -6,8 +6,15 @@
 }
 
 @font-face {
-  font-family: "Space Grotesk";
+  font-family: "Roboto";
   font-style: bold;
   font-weight: 700;
-  src: url("./fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+  src: url("./fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: "regular";
+  font-weight: 400;
+  src: url("./fonts/AkzidenzGroteskPro-Regular.woff2") format("woff2");
 }

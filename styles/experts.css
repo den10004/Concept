@@ -1,14 +1,3 @@
-.experts {
-  max-width: 1440px;
-  margin: 120px auto 0;
-}
-
-@media screen and (max-width: 1440px) {
-  .experts {
-    width: 95%;
-  }
-}
-
 .expertContent {
   display: flex;
   width: 600px;
@@ -44,6 +33,12 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 550px) {
+  .expertContent-right > h5 {
+    font-size: 14px;
+  }
+}
+
 .expertContent-right > p {
   margin-top: 15px;
   font-family: "Roboto";
@@ -52,22 +47,25 @@
   line-height: 27px;
 }
 
-.next-experts {
-  transform: rotate(90deg);
-  width: 46px;
-  height: 23px;
+@media screen and (max-width: 550px) {
+  .expertContent-right > p {
+    font-size: 11px;
+    line-height: 15px;
+    width: 70%;
+  }
 }
 
-.prev-experts {
-  transform: rotate(-90deg);
-  width: 46px;
-  height: 23px;
+@media screen and (max-width: 425px) {
+  .expertContent-right > p {
+    width: 90%;
+  }
 }
 
 .expertSliderBottons {
   display: flex;
   justify-content: space-between;
   width: 80px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -76,10 +74,19 @@
   }
 }
 
+.buttonStyle {
+  width: 46px;
+  height: 23px;
+}
+
+.changeColor > path:active {
+  fill: #070b1d;
+}
+
 .experts__sliderBlock {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 95%;
   margin-top: 90px;
 }
 

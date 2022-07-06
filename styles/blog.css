@@ -1,27 +1,22 @@
-.blog {
-  max-width: 1440px;
-  margin: 120px auto 0;
-}
-
-@media screen and (max-width: 1440px) {
-  .blog {
-    width: 95%;
-  }
-}
-
 .blog__main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 0px;
-  margin-top: 70px;
+  margin-top: 60px;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .blog {
+  .blog__main {
+    margin-top: 40px;
     overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog {
   }
 }
 

@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .demo {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .demo {
     height: 254px;
@@ -61,7 +67,7 @@
 }
 
 .demo__headline > h2 {
-  font-family: "Space Grotesk";
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 40px;
   color: white;
@@ -105,7 +111,7 @@
 
 @media screen and (max-width: 425px) {
   .demo__wrap > h3 {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 

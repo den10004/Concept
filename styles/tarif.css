@@ -1,11 +1,9 @@
 .tarif {
-  max-width: 1440px;
-  margin: 120px auto 0;
+  display: none;
 }
 
 @media screen and (max-width: 1440px) {
   .tarif {
-    width: 95%;
     overflow-x: scroll;
   }
 }
@@ -323,6 +321,12 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tarifPrice {
+    font-size: 11px;
   }
 }
 

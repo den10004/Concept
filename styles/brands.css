@@ -1,14 +1,3 @@
-.brands {
-  max-width: 1440px;
-  margin: 120px auto 0;
-}
-
-@media screen and (max-width: 1440px) {
-  .brands {
-    width: 95%;
-  }
-}
-
 .brands__logos {
   margin-top: 70px;
 }

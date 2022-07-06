@@ -10,6 +10,9 @@
 @import "./creator.css";
 @import "./footer.css";
 
+@import "./headerPolitic.css";
+@import "./rules.css";
+
 @import "./normalize.css";
 @import "../vendor/fonts.css";
 @import "./swiper-bundle.css";
@@ -27,8 +30,8 @@ body {
 }
 
 .button {
-  width: 338px;
-  height: 85px;
+  width: 215px;
+  height: 70px;
   background-color: #00b2ff;
   color: #ffffff;
   font-family: "Roboto";
@@ -53,7 +56,7 @@ body {
 .headline {
   display: flex;
   align-items: center;
-  width: 500px;
+  width: 550px;
 }
 @media screen and (max-width: 550px) {
   .headline {
@@ -62,7 +65,7 @@ body {
 }
 
 .headline > h2 {
-  font-family: "Space Grotesk";
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 40px;
   color: #070b1d;
@@ -100,4 +103,21 @@ body {
 
 .link:active {
   color: #070b1d;
+}
+
+.indent {
+  max-width: 1440px;
+  margin: 120px auto 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .indent {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .indent {
+    margin: 60px auto 0;
+  }
 }
