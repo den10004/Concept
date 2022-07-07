@@ -1,7 +1,3 @@
-.tarif {
-  /* display: none;*/
-}
-
 @media screen and (max-width: 1440px) {
   .tarif {
     overflow-x: scroll;
@@ -21,7 +17,7 @@
 }
 
 .tarif-headline > h2 {
-  font-family: "Space Grotesk";
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 32px;
   color: #070b1d;
@@ -40,7 +36,7 @@
 }
 
 .discountHeadline > h2 {
-  font-family: "Space Grotesk";
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 32px;
   color: #070b1d;
@@ -270,7 +266,7 @@
 }
 
 .discount > h6 {
-  font-family: "Space Grotesk";
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 40px;
   background-color: #00b2ff;
