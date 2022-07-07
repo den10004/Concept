@@ -103,6 +103,12 @@
   }
 }
 
+@media screen and (max-width: 1850px) {
+  .header-min > img {
+    width: 70px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .header-min {
     padding: 12px 0 12px 0;
