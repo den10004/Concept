@@ -503,3 +503,17 @@
 .divM42 {
   grid-area: 14 / 5 / 15 / 6;
 }
+
+.tarif__show {
+  display: flex;
+  align-items: center;
+  margin-top: 46px;
+}
+
+.tarif__show > p {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 32px;
+  color: #00b2ff;
+  margin-right: 20px;
+}
