@@ -1,124 +1,124 @@
-header {
-  width: 100%;
+.header {
+  height: 423px;
   background-color: #070b1d;
-  height: 280px;
+  position: relative;
 }
 
-@media screen and (max-width: 1850px) {
-  header {
-    height: 100px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    height: 46px;
-  }
-}
-
-.header-background {
-  max-width: 1920px;
-  background-image: url(../images/header.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 714px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1280px) {
-  .header-background {
-    display: none;
-  }
-}
-
-.header__blocks {
-  max-width: 1850px;
+.header-wrapper {
+  width: 1920px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 36px 20px 0 20px;
 }
 
-.header__blocksMin {
-  display: none;
-}
-
-.header-headlineMin {
-  display: none;
-}
-
-@media screen and (max-width: 1280px) {
-  .header__blocksMin {
-    display: flex;
-  }
-  .header-headlineMin {
-    display: flex;
-    flex-direction: column;
-    padding-top: 250px;
-  }
-
-  .header__blocksMin {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px 0 10px 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .header-headlineMin {
-      padding-top: 400px;
-    }
-  }
-
-  @media screen and (max-width: 425px) {
-    .header-headlineMin {
-      padding-top: 250px;
-    }
-  }
-
-  .header-backgroundMin {
-    background-image: url(../images/header1280.png);
-    height: 632px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 0 auto;
+@media screen and (max-width: 1920px) {
+  .header-wrapper {
+    width: 95%;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .header-backgroundMin {
-    background-image: url(../images/header1024.png);
-    height: 733px;
-  }
+.header__middle {
+  background-image: url(../images/header.png);
+  height: 715px;
+  width: 1636px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
-  .header__nav-right > a > img {
-    width: 45px;
-  }
-  .header-backgroundMin {
-    background-image: url(../images/header768.png);
-    height: 960px;
+  .header__middle {
+    background-image: url(../images/header.png);
+    height: 515px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .header-backgroundMin {
+  .header__middle {
     background-image: url(../images/header425.png);
-    height: 532px;
+    height: 432px;
   }
 }
 
-.header__nav-left > button {
-  border: none;
-  background: none;
-  cursor: pointer;
+.header__middle-max {
+  margin: 180px auto 32px;
+  width: 794px;
+  height: 101px;
 }
 
-.header__nav-left > li > a {
+.header__middle-min {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .header__middle-max {
+    display: none;
+  }
+  .header__middle-min {
+    display: flex;
+    width: 283px;
+    margin: 14px auto 25px;
+  }
+}
+
+.header__middle-headline {
+  margin: 0 auto;
+  width: 90%;
+  z-index: 1;
+  text-align: start;
+}
+
+.header-min {
+  display: none;
+}
+
+.widthStyle {
+  width: 156px;
+  padding-top: 36px;
+}
+
+@media screen and (max-width: 1850px) {
+  .header-wrapper {
+    width: 100%;
+  }
+  .header__left {
+    display: none;
+  }
+  .header__right {
+    display: none;
+  }
+  .header__middle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-min {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0 36px 0;
+  }
+  .widthStyle {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-min {
+    padding: 12px 0 12px 0;
+  }
+
+  .header-min > img {
+    width: 46px;
+  }
+}
+
+.headerBotton {
+  border: none;
+  background: none;
+}
+
+.header__right-list > li > a {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -127,36 +127,30 @@ header {
   list-style-type: none;
   cursor: pointer;
   text-decoration: none;
-}
-
-.header__nav-left > li > a:hover {
-  text-decoration: underline;
-}
-
-.headlineStyle {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.headlineStyle > h1 > span {
   color: #00b2ff;
 }
 
-@media screen and (max-width: 1024px) {
-  .headlineStyle {
-    width: 90%;
-  }
+.header__right-list > li > a:hover {
+  text-decoration: underline;
 }
-.headlineStyle > h1 {
+
+.header__middle-headline > h1 {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 60px;
   color: #ffffff;
-  line-height: 150%;
   margin: 0;
+  line-height: 108%;
 }
 
-.headlineStyle > h3 {
+.header__middle-headline > h1 > span {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 60px;
+  color: #00b2ff;
+}
+
+.header__middle-headline > h3 {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 24px;
@@ -164,31 +158,73 @@ header {
   margin: 50px 0 50px 0;
 }
 
-@media screen and (max-width: 1280px) {
-  .headlineStyle > h1 {
+@media screen and (max-width: 850px) {
+  .header__middle-headline > h1 {
     font-size: 40px;
   }
-  .headlineStyle > h3 {
-    font-size: 18px;
-    margin: 30px 0 30px 0;
+
+  .header__middle-headline > h1 > span {
+    font-size: 40px;
+  }
+  .header__middle-headline > h3 {
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .headlineStyle > h1 {
+  .header__middle-headline > h1 {
     font-size: 30px;
   }
-  .headlineStyle > h3 {
-    margin: 30px 0 30px 0;
+
+  .header__middle-headline > h1 > span {
+    font-size: 30px;
+  }
+  .header__middle-headline > h3 {
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .headlineStyle > h1 {
+  .header__middle-headline > h1 {
     font-size: 21px;
   }
-  .headlineStyle > h3 {
+
+  .header__middle-headline > h1 > span {
+    font-size: 21px;
+  }
+  .header__middle-headline > h3 {
     font-size: 14px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 25px 0;
+  }
+}
+
+.header__blur {
+  position: absolute;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 427px;
+  top: 260px;
+}
+
+@media screen and (max-width: 1850px) {
+  .header__blur {
+    top: 400px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header__blur {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__blur {
+    height: 327px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__blur {
+    height: 242px;
   }
 }

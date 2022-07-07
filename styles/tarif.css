@@ -367,6 +367,10 @@
   }
 }
 
+.tarif__table-min {
+  overflow-x: scroll;
+}
+
 @media screen and (max-width: 1024px) {
   .tarif__table-min {
     width: 1000px;
