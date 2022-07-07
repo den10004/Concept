@@ -1,5 +1,5 @@
 .tarif {
-  display: none;
+  /* display: none;*/
 }
 
 @media screen and (max-width: 1440px) {
@@ -8,7 +8,7 @@
   }
 }
 
-.tarif-headline {
+.tarif__table {
   display: none;
 }
 
@@ -352,7 +352,7 @@
 
 /*******min**************/
 
-.tarif__table-min {
+.tarif_blockMin {
   display: none;
 }
 
@@ -366,13 +366,16 @@
     width: 665px;
     margin-top: 40px;
   }
+  .tarif_blockMin {
+    display: block;
+  }
 }
-/*
+
 @media screen and (max-width: 1024px) {
   .tarif__table-min {
     width: 1000px;
   }
-}*/
+}
 
 .divM1 {
   grid-area: 1 / 1 / 2 / 2;
