@@ -1,36 +1,5 @@
 .know {
   max-width: 1430px;
-  margin: 620px auto 0;
-}
-
-@media screen and (max-width: 1850px) {
-  .know {
-    margin: 720px auto 0;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .know {
-    margin: 850px auto 0;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .know {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .know {
-    margin: 1080px auto 0;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .know {
-    margin: 650px auto 0;
-  }
 }
 
 .know__headline {
