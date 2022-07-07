@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 768px) {
   .demo__headline {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
@@ -68,7 +68,7 @@
 
 .demo__headline > h2 {
   font-family: "Roboto";
-  font-weight: 700;
+  font-weight: 800;
   font-size: 40px;
   color: white;
   line-height: 150%;
@@ -78,6 +78,9 @@
   .demo__headline > h2 {
     color: #00b2ff;
     margin: 0 auto;
+  }
+  .demo__headline > img {
+    display: none;
   }
 }
 
@@ -109,6 +112,12 @@
   text-align: start;
 }
 
+@media screen and (max-width: 768px) {
+  .demo__wrap > h3 {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .demo__wrap > h3 {
     font-size: 14px;
@@ -128,7 +137,6 @@
 }
 
 .demo__marker {
-  transform: rotate(180deg);
   width: 19px;
   height: 10px;
   display: none;
