@@ -67,10 +67,54 @@
 .image > img {
   width: 60%;
 }
+.label1 {
+  width: 240px;
+}
+
+.label1 > div {
+  margin: 0 auto;
+}
+
+.width180 {
+  width: 180px;
+}
+
+.width200 {
+  width: 200px;
+}
+
+.width220 {
+  width: 220px;
+}
+
+.width221 {
+  width: 220px;
+}
+
+.width240 {
+  width: 240px;
+}
+
+@media screen and (max-width: 1280px) {
+  .width180 {
+    width: 150px;
+  }
+
+  .width200 {
+    width: 110px;
+  }
+
+  .width220 {
+    width: 130px;
+  }
+
+  .width240 {
+    width: 150px;
+  }
+}
 
 .tabs > label {
   display: inline-block;
-  /* text-align: center;*/
   vertical-align: middle;
   user-select: none;
   border-bottom: 5px solid #a6a6a6;
@@ -82,7 +126,6 @@
   font-weight: 700;
   font-size: 24px;
   color: #a6a6a6;
-  padding: 1px 0px 1px 0px;
 }
 
 @media screen and (max-width: 1280px) {
