@@ -56,12 +56,12 @@ body {
 .headline {
   display: flex;
   align-items: center;
-  width: 550px;
+  /* width: 550px;*/
   margin-bottom: 70px;
 }
 @media screen and (max-width: 550px) {
   .headline {
-    width: 95%;
+    /* width: 95%;*/
     margin-bottom: 40px;
   }
 }
@@ -88,6 +88,8 @@ body {
 @media screen and (max-width: 550px) {
   .headline > img {
     margin-left: 15px;
+    width: 10px;
+    height: 10px;
   }
 }
 

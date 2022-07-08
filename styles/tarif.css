@@ -2,33 +2,6 @@
   display: none;
 }
 
-@media screen and (max-width: 1500px) {
-  .tarif-headline {
-    display: flex;
-    align-items: center;
-    /*  width: 300px;*/
-  }
-}
-
-.tarif-headline > h2 {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 32px;
-  color: #070b1d;
-}
-
-@media screen and (max-width: 550px) {
-  .tarif-headline > h2 {
-    font-size: 17px;
-  }
-}
-
-.tarif-headline > img {
-  width: 19px;
-  height: 19px;
-  margin-left: 25px;
-}
-
 .discountHeadline > h2 {
   font-family: "Roboto";
   font-weight: 700;
@@ -348,7 +321,6 @@
 
 @media screen and (max-width: 1500px) {
   .tarif__table-min {
-    overflow-x: scroll;
     display: grid;
     grid-template-columns: repeat(5, 125px);
     grid-template-rows: 1fr 0.16fr 0.13fr 0.16fr 0.13fr 0.16fr 0.13fr 0.16fr 0.13fr 0.16fr 0.13fr 0.16fr 0.13fr 0.16fr;
@@ -365,6 +337,11 @@
 .tarif__table-min {
   width: 100%;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+}
+.tarif__table-min::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .divM1 {
