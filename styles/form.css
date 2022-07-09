@@ -1,0 +1,175 @@
+.formRegistration {
+  background-color: #070b1d;
+  margin: 20px auto 0;
+  padding: 35px 152px 60px 152px;
+}
+
+@media screen and (max-width: 1280px) {
+  .formRegistration {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .formRegistration {
+    padding: 35px 50px 40px 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .formRegistration {
+    padding: 30px 12px 40px 12px;
+  }
+}
+
+.formRegistration__inputs {
+  display: grid;
+  grid-template-rows: 80px 80px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .formRegistration__inputs {
+    grid-template-rows: repeat(4, 37px);
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
+.formRegistration__inputs > input {
+  border: 2px solid #00b2ff;
+  background-color: #070b1d;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  color: #a6a6a6;
+  padding-left: 35px;
+}
+
+@media screen and (max-width: 425px) {
+  .formRegistration__inputs > input {
+    font-size: 8px;
+  }
+}
+
+.formRegistration > h1 {
+  font-family: "Roboto";
+  font-size: 60px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .formRegistration > h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .formRegistration > h1 {
+    font-size: 21px;
+  }
+}
+
+.formRegistration > p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #ffffff;
+  margin: 30px 0 45px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .formRegistration > p {
+    font-size: 11px;
+    line-height: 18px;
+    margin: 15px 0 20px 0;
+  }
+}
+
+.formRegistration__forma > p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .formRegistration__forma > p {
+    font-size: 10px;
+    margin: 15px 0 0 0;
+  }
+}
+
+.formRegistration__forma > p > a {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+  .formRegistration__forma > p > a {
+    font-size: 10px;
+  }
+}
+
+.formRegistration__checkbox {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 35px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 425px) {
+  .formRegistration__checkbox {
+    font-size: 8px;
+    margin: 14px 0 20px 0;
+  }
+}
+
+.formRegistration__checkbox > label {
+  margin-bottom: 12px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 425px) {
+  .formRegistration__checkbox > label {
+    font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+}
+
+.formRegistration__checkbox > label > input {
+  margin-right: 12px;
+}
+
+.button-wrap {
+  display: flex;
+  width: 215px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .button-wrap {
+    width: 156px;
+  }
+}

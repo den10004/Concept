@@ -15,8 +15,11 @@
 @media screen and (max-width: 1920px) {
   .headerPage-wrapper {
     font-size: 30px;
-    align-items: center;
   }
+}
+
+.alignItems {
+  align-items: center;
 }
 
 @media screen and (max-width: 1850px) {

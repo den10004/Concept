@@ -261,3 +261,8 @@
     height: 242px;
   }
 }
+
+.header__right-list {
+  list-style-type: none;
+  width: 156px;
+}

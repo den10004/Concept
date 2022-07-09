@@ -13,6 +13,9 @@
 @import "./headerPolitic.css";
 @import "./rules.css";
 
+@import "./registration.css";
+@import "./form.css";
+
 @import "./normalize.css";
 @import "../vendor/fonts.css";
 @import "./swiper-bundle.css";

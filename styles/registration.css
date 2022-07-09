@@ -1,0 +1,35 @@
+.changeColor {
+  background-color: white;
+}
+
+@media screen and (max-width: 1850px) {
+  .changeColor {
+    background-color: #070b1d;
+  }
+}
+
+.registrationForm {
+  display: none;
+}
+
+.formRegistrationNone {
+  display: flex;
+}
+
+@media screen and (max-width: 1850px) {
+  .registrationForm {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .formRegistrationNone {
+    display: none;
+  }
+}
+
+.registrationBlock {
+  max-width: 1440px;
+  display: flex;
+  margin: 20px auto;
+}
