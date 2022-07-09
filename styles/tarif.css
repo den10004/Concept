@@ -1,4 +1,205 @@
-.tarif__table {
+.tarif__block-header {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 203px;
+  grid-template-columns: repeat(6, 215px);
+  grid-gap: 30px;
+}
+
+.tarifDescriptionMin {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .tarif__block {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+  }
+
+  .tarif__block::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .tarif__block-header {
+    max-width: 478px;
+    grid-template-rows: 125px;
+    grid-template-columns: repeat(5, 146px);
+    grid-gap: 10px;
+  }
+  .discountHeadline {
+    display: none;
+  }
+
+  .tarifDescriptionMin {
+    display: block;
+  }
+}
+
+.discountHeadline > h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 32px;
+  color: #070b1d;
+}
+
+.discount {
+  text-align: center;
+}
+
+.discount > h5 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  background-color: #070b1d;
+  color: #ffffff;
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .discount > h5 {
+    height: 48px;
+    font-size: 14px;
+  }
+}
+
+.discount > h6 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 40px;
+  background-color: #00b2ff;
+  color: #070b1d;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .discount > h6 {
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+.discount > p {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  background-color: #070b1d;
+  color: #ffffff;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .discount > p {
+    height: 30%;
+    font-size: 14px;
+  }
+}
+.tarifDescriptionMax {
+  display: flex;
+  align-items: center;
+}
+
+.tarif__block-cost {
+  margin-top: 0px;
+}
+
+.tarif__block-cost-price {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 75px;
+  grid-template-columns: repeat(6, 215px);
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  .tarif__block-cost-price {
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(5, 146px);
+    grid-gap: 10px;
+  }
+  .tarifDescriptionMax {
+    display: none;
+  }
+
+  .tarif__block-cost {
+    margin-top: 23px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tarif__block-cost-price {
+    grid-template-rows: 25px;
+  }
+}
+
+.tarifPrice {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1500px) {
+  .tarifPrice {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+.tariftable-line {
+  width: 100%;
+  border-top: 8px solid rgba(0, 178, 255, 0.12);
+}
+
+.tarifDescription {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #070b1d;
+}
+
+@media screen and (max-width: 1500px) {
+  .tarifDescription {
+    border-bottom: 2px solid rgba(0, 178, 255, 0.12);
+    border-top: 2px solid rgba(0, 178, 255, 0.12);
+    color: #a6a6a6;
+    font-weight: 400;
+    /*  font-size: 8px;*/
+    height: 40px;
+    width: 770px;
+  }
+
+  .tariftable-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tarifDescription {
+    font-size: 8px;
+    height: 20px;
+    width: 770px;
+  }
+
+  .tariftable-line {
+    display: none;
+  }
+}
+
+/*.tarif__table {
   display: none;
 }
 
@@ -312,9 +513,9 @@
     height: 19px;
   }
 }
-
+*/
 /*******min**************/
-
+/*
 .tarif_blockMin {
   display: none;
 }
@@ -502,3 +703,4 @@
     margin-top: 20px;
   }
 }
+*/
