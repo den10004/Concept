@@ -4,81 +4,153 @@
   box-sizing: border-box;
 }
 
-.headerPol {
-  width: 100%;
-  background-color: #070b1d;
-  height: 280px;
-}
-
-@media screen and (max-width: 768px) {
-  .headerPol {
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .headerPol {
-  }
-}
-
-.headerPolitic {
+.headerPage-wrapper {
   max-width: 1920px;
-  padding-top: 35px;
-}
-
-.headerPolitic__blocks {
-  width: 95%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 30px;
 }
 
-.headerPolitic__nav-middle {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+@media screen and (max-width: 1920px) {
+  .headerPage-wrapper {
+    font-size: 30px;
+    align-items: center;
+  }
 }
 
-.headerPolitic__nav-middle > h1 {
-  margin: 0;
-  font-family: "Akzidenz-Grotesk Pro";
-  font-weight: 400;
-  font-size: 60px;
-  color: #ffffff;
+@media screen and (max-width: 1850px) {
+  .headerPage-wrapper {
+    padding: 24px;
+  }
 }
 
-@media screen and (max-width: 1440px) {
-  .headerPolitic__nav-middle > h1 {
-    font-size: 40px;
+@media screen and (max-width: 768px) {
+  .headerPage-wrapper {
+    padding: 12px;
+  }
+}
+
+.headerPage__left > img {
+  width: 100%;
+}
+
+.headerPage__middle {
+  margin-top: 70px;
+  width: calc(100% - 400px);
+}
+
+@media screen and (max-width: 1850px) {
+  .headerPage__middle {
+    margin-top: 0;
+    width: calc(100% - 200px);
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .headerPolitic__nav-middle > h1 {
+  .headerPage__middle {
+    width: calc(100% - 150px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .headerPage__middle {
+    display: none;
+  }
+}
+
+.headerPage__middle > h2 {
+  font-family: "Akzidenz-Grotesk Pro";
+  font-weight: 400;
+  font-size: 60px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1850px) {
+  .headerPage__middle > h2 {
+    margin-top: 0;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .headerPage__middle > h2 {
     font-size: 30px;
   }
 }
 
-ul.breadcrumb {
+@media screen and (max-width: 900px) {
+  .headerPage__middle > h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerPage__middle > h2 {
+    font-size: 20px;
+  }
+}
+
+.breadcrumb {
   list-style: none;
+  display: flex;
 }
 
-ul.breadcrumb li {
-  display: inline;
+.breadcrumbPage {
+  display: none;
+}
+
+.breadcrumb > li {
+  margin-right: 23px;
+}
+
+.breadcrumb > li > a {
   font-size: 18px;
-}
-
-ul.breadcrumb li + li:before {
-  padding: 8px;
+  font-family: "Roboto";
   color: #00b2ff;
-  content: url(../images/Arrow.png);
-}
-
-ul.breadcrumb li a {
-  color: #0275d8;
   text-decoration: none;
 }
 
-ul.breadcrumb li a:hover {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: underline;
+@media screen and (max-width: 768px) {
+  .breadcrumb > li > a {
+    font-size: 14px;
+  }
+  .breadcrumb > li {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .breadcrumb > li > a {
+    font-size: 9px;
+  }
+}
+
+.rules__headline {
+  margin-top: 30px;
+}
+
+.widthStylePolitic {
+  width: 156px;
+}
+
+.colorBlack {
+  background-color: #070b1d;
+}
+
+@media screen and (max-width: 1850px) {
+  .header__right-list {
+    display: none;
+  }
+  .breadcrumbNone {
+    display: none;
+  }
+  .breadcrumbPage {
+    display: flex;
+  }
+  .widthStylePolitic {
+    width: 70px;
+  }
+  .widthStylePoliticRight {
+    width: 24px;
+  }
 }

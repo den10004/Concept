@@ -1,12 +1,18 @@
 .rules {
   width: 1440px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1450px) {
   .rules {
     width: 95%;
     padding: 0px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rules {
+    margin: 20px auto;
   }
 }
 
@@ -21,14 +27,26 @@
 .mt30 {
   margin-top: 30px;
 }
-/*
-ol {
-  list-style: none;
 
-  counter-reset: li;
+@media screen and (max-width: 768px) {
+  .rules__headline {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
-li:before {
-  counter-increment: li;
-  content: counters(li, ".") ". ";
+
+.rules__block {
+  margin-left: 50px;
 }
-*/
+
+@media screen and (max-width: 768px) {
+  .rules__block {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .rules__block {
+    margin-left: 20px;
+  }
+}
