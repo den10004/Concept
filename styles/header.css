@@ -1,3 +1,29 @@
+.wrap {
+  height: 715px;
+}
+
+@media screen and (max-width: 1850px) {
+  .wrap {
+    height: 795px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .wrap {
+    height: 763px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrap {
+    height: 565px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrap {
+    height: 480px;
+  }
+}
+
 .header {
   background-color: #070b1d;
   position: relative;
