@@ -447,7 +447,6 @@
         <img src="./images/marker.svg" alt="marker" />
       </div>
 
-      <!-- max > 1440px-->
       <div class="tarif__block">
         <div class="tarif__block-header">
           <div class="discountHeadline">
@@ -483,7 +482,7 @@
             <p>10000 руб.</p>
           </div>
         </div>
-        <div class="tarif__block-cost">
+        <div class="tarif__block-cost active">
           <div class="tarif__block-cost-wrap">
             <div class="tarifDescriptionMin">
               <div class="tarifDescription">“Акварель” (за слово)</div>
@@ -499,8 +498,8 @@
               <div class="tarifPrice">₽ 0.015</div>
               <div class="tarifPrice">₽ 0.01</div>
             </div>
-            <hr class="tariftable-line" />
           </div>
+          <hr class="tariftable-line" />
 
           <div class="tarif__block-cost-wrap">
             <div class="tarifDescriptionMin">
@@ -521,9 +520,8 @@
               <div class="tarifPrice">₽ 0.015</div>
               <div class="tarifPrice">₽ 0.01</div>
             </div>
-            <hr class="tariftable-line" />
           </div>
-
+          <hr class="tariftable-line" />
           <div class="tarif__block-cost-wrap">
             <div class="tarifDescriptionMin">
               <div class="tarifDescription">
@@ -544,9 +542,8 @@
               <div class="tarifPrice">₽ 0.015</div>
               <div class="tarifPrice">₽ 0.01</div>
             </div>
-            <hr class="tariftable-line" />
           </div>
-
+          <hr class="tariftable-line" />
           <div class="tarif__block-cost-wrap">
             <div class="tarifDescriptionMin">
               <div class="tarifDescription">“Кластеризатор” (за фразу )</div>
@@ -565,9 +562,8 @@
               <div class="tarifPrice">₽ 0.015</div>
               <div class="tarifPrice">₽ 0.01</div>
             </div>
-            <hr class="tariftable-line" />
           </div>
-
+          <hr class="tariftable-line" />
           <div class="tarif__block-cost-wrap">
             <div class="tarifDescriptionMin">
               <div class="tarifDescription">“Маркеры-онлайн” (за фразу )</div>
@@ -586,9 +582,8 @@
               <div class="tarifPrice">₽ 0.015</div>
               <div class="tarifPrice">₽ 0.01</div>
             </div>
-            <hr class="tariftable-line" />
           </div>
-
+          <hr class="tariftable-line" />
           <div class="tarif__block-cost-wrap">
             <div class="tarifDescriptionMin">
               <div class="tarifDescription">“Маркеры” (за фразу )</div>
@@ -605,12 +600,48 @@
               <div class="tarifPrice">₽ 0.01</div>
             </div>
           </div>
+          <hr class="tariftable-line" />
+          <div class="tarif__block-cost-wrap">
+            <div class="tarifDescriptionMin">
+              <div class="tarifDescription">Пробный</div>
+            </div>
+            <div class="tarif__block-cost-price">
+              <div class="tarifDescriptionMax">
+                <div class="tarifDescription">Пробный <br />(за фразу )</div>
+              </div>
+
+              <div class="tarifPrice">₽ 0.05</div>
+              <div class="tarifPrice">₽ 0.05</div>
+              <div class="tarifPrice">₽ 0.02</div>
+              <div class="tarifPrice">₽ 0.015</div>
+              <div class="tarifPrice">₽ 0.01</div>
+            </div>
+          </div>
+          <hr class="tariftable-line" />
+          <div class="tarif__block-cost-wrap">
+            <div class="tarifDescriptionMin">
+              <div class="tarifDescription">Пробный (за фразу )</div>
+            </div>
+            <div class="tarif__block-cost-price">
+              <div class="tarifDescriptionMax">
+                <div class="tarifDescription">Пробный <br />(за фразу )</div>
+              </div>
+
+              <div class="tarifPrice">₽ 0.05</div>
+              <div class="tarifPrice">₽ 0.05</div>
+              <div class="tarifPrice">₽ 0.02</div>
+              <div class="tarifPrice">₽ 0.015</div>
+              <div class="tarifPrice">₽ 0.01</div>
+            </div>
+          </div>
+          <hr class="tariftable-line" />
         </div>
       </div>
 
       <div class="tarif__show">
-        <p>посмотреть все цены</p>
+        <p>ПОСМОТРЕТЬ ВСЕ ЦЕНЫ</p>
         <svg
+          class="tarif__show-img"
           width="46"
           height="24"
           viewBox="0 0 46 24"
@@ -1011,5 +1042,16 @@
       spaceBetween: 20,
       centeredSlides: true,
     });
+
+    const buttonShow = document.querySelector(".tarif__show");
+    const tarifShowImg = document.querySelector(".tarif__show-img");
+    const blockShow = document.querySelector(".tarif__block-cost");
+
+    function showBlock() {
+      blockShow.classList.toggle("hiddenBlock");
+      tarifShowImg.classList.toggle("rotateTarif__show");
+    }
+
+    buttonShow.addEventListener("click", showBlock);
   </script>
 </html>

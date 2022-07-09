@@ -109,6 +109,8 @@
 
 .tarif__block-cost {
   margin-top: 0px;
+  height: 505px;
+  overflow: hidden;
 }
 
 .tarif__block-cost-price {
@@ -131,6 +133,7 @@
 
   .tarif__block-cost {
     margin-top: 23px;
+    height: 540px;
   }
 }
 
@@ -138,6 +141,13 @@
   .tarif__block-cost-price {
     grid-template-rows: 25px;
   }
+  .tarif__block-cost {
+    height: 270px;
+  }
+}
+
+.hiddenBlock {
+  height: auto;
 }
 
 .tarifPrice {
@@ -204,6 +214,9 @@
   align-items: center;
   margin-top: 46px;
 }
+.rotateTarif__show {
+  transform: rotate(180deg);
+}
 
 .tarif__show > p {
   font-family: "Roboto";
@@ -222,7 +235,7 @@
   .tarif__show > p {
     font-size: 14px;
   }
-  .tarif__show > svg {
+  .tarif__show-img {
     width: 23px;
     height: 12px;
   }
