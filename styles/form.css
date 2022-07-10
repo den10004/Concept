@@ -154,7 +154,7 @@
   .formRegistration__checkbox > label {
     font-size: 8px;
     font-weight: 400;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
   }
 }
 
@@ -172,4 +172,74 @@
   .button-wrap {
     width: 156px;
   }
+}
+
+.formRegistration__checkbox-link {
+  margin-bottom: 12px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+  .formRegistration__checkbox-link {
+    font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+}
+
+.formRegistration__checkbox-link:hover {
+  color: #00b2ff;
+  text-decoration: underline;
+}
+
+label {
+  margin-left: 30px;
+}
+
+.check-box {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  padding-left: 30px;
+}
+
+.check-style {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #00b2ff;
+  border-radius: 6px;
+  position: absolute;
+  box-sizing: border-box;
+  margin-left: -30px;
+}
+
+.check-box:checked + .check-style::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #00b2ff;
+  border-radius: 6px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.check-box:disabled + .check-style::before {
+  background-color: #ccc;
+}
+
+.check-box:checked:disabled + .check-style::before {
+  background-color: #ccc;
+}
+.check-box:checked + .check-style {
+  border: 1px solid #00b2ff;
 }
