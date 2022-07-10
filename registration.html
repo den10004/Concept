@@ -53,8 +53,49 @@
               </p>
               <form class="formRegistration__forma">
                 <div class="formRegistration__inputs">
-                  <input placeholder="ФИО" /> <input placeholder="Почта" />
-                  <input placeholder="Телефон" /> <input placeholder="Пароль" />
+                  <div class="formRegistration__input">
+                    <input
+                      placeholder="ФИО"
+                      type="text"
+                      name="name"
+                      pattern="^[А-Яа-яЁё\s]+$"
+                      minlength="1"
+                      required
+                    />
+                    <span class="form__error">Введите имя</span>
+                  </div>
+                  <div class="formRegistration__input">
+                    <input placeholder="Почта" type="email" name="e-mail" />
+                    <span class="form__error"
+                      >Введите почту в правильном формате</span
+                    >
+                  </div>
+                  <div class="formRegistration__input">
+                    <input
+                      type="tel"
+                      name="tel"
+                      placeholder="Телефон"
+                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                      minlength="18"
+                      maxlength="18"
+                      required
+                    />
+                    <span class="form__error"
+                      >Введите номер в правильном формате</span
+                    >
+                  </div>
+                  <div class="formRegistration__input">
+                    <input
+                      placeholder="Пароль"
+                      name="password"
+                      type="password"
+                      pattern="[0-9a-fA-F]{4,8}"
+                      minlength="3"
+                      required
+                    />
+                    <span class="form__error">Неверный пароль</span>
+                    <a href="#" class="lostPassword">Забыли пароль?</a>
+                  </div>
                 </div>
 
                 <div class="formRegistration__checkbox">
@@ -142,8 +183,49 @@
           </p>
           <form class="formRegistration__forma">
             <div class="formRegistration__inputs">
-              <input placeholder="ФИО" /> <input placeholder="Почта" />
-              <input placeholder="Телефон" /> <input placeholder="Пароль" />
+              <div class="formRegistration__input">
+                <input
+                  placeholder="ФИО"
+                  type="text"
+                  name="name"
+                  pattern="^[А-Яа-яЁё\s]+$"
+                  minlength="1"
+                  required
+                />
+                <span class="form__error">Введите имя</span>
+              </div>
+              <div class="formRegistration__input">
+                <input placeholder="Почта" type="email" name="e-mail" />
+                <span class="form__error"
+                  >Введите почту в правильном формате</span
+                >
+              </div>
+              <div class="formRegistration__input">
+                <input
+                  type="tel"
+                  name="tel"
+                  placeholder="Телефон"
+                  pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                  minlength="18"
+                  maxlength="18"
+                  required
+                />
+                <span class="form__error"
+                  >Введите номер в правильном формате</span
+                >
+              </div>
+              <div class="formRegistration__input">
+                <input
+                  placeholder="Пароль"
+                  name="password"
+                  type="password"
+                  pattern="[0-9a-fA-F]{4,8}"
+                  minlength="3"
+                  required
+                />
+                <span class="form__error">Неверный пароль</span>
+                <a href="#" class="lostPassword">Забыли пароль?</a>
+              </div>
             </div>
 
             <div class="formRegistration__checkbox">
