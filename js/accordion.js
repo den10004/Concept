@@ -13,3 +13,21 @@ question.forEach((question) => {
     }
   });
 });
+
+const buttonShow = document.querySelector(".tarif__show");
+const tarifShowImg = document.querySelector(".tarif__show-img");
+const blockShow = document.querySelector(".tarif__block-cost");
+
+function showBlock() {
+  blockShow.classList.toggle("hiddenBlock");
+  tarifShowImg.classList.toggle("rotateTarif__show");
+}
+
+buttonShow.addEventListener("click", showBlock);
+
+function showBlock() {
+  blockShow.classList.toggle("hiddenBlock");
+  tarifShowImg.classList.toggle("rotateTarif__show");
+}
+
+buttonShow.addEventListener("click", showBlock);
