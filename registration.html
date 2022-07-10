@@ -45,8 +45,8 @@
               </li>
             </ul>
             <div class="formRegistration">
-              <h1>Зарегистрироваться</h1>
-              <p>
+              <h1 class="form__headline">Зарегистрироваться</h1>
+              <p class="form__paragraph">
                 Зарегистируйтесь в системе и получите доступ к демо-версии. Вы
                 всегда можете отказаться от использования системы или же
                 приобрести необходимый вам тариф.
@@ -175,8 +175,8 @@
           </li>
         </ul>
         <div class="formRegistration">
-          <h1>Зарегистрироваться</h1>
-          <p>
+          <h1 class="form__headline">Зарегистрироваться</h1>
+          <p class="form__paragraph">
             Зарегистируйтесь в системе и получите доступ к демо-версии. Вы
             всегда можете отказаться от использования системы или же приобрести
             необходимый вам тариф.
@@ -199,15 +199,16 @@
                 <span class="form__error"
                   >Введите почту в правильном формате</span
                 >
+                <span class="form__error1"
+                  >Введите почту в правильном формате</span
+                >
               </div>
               <div class="formRegistration__input">
                 <input
                   type="tel"
                   name="tel"
                   placeholder="Телефон"
-                  pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-                  minlength="18"
-                  maxlength="18"
+                  pattern="[+][0-9]{1}[0-9]{10}"
                   required
                 />
                 <span class="form__error"

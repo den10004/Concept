@@ -55,7 +55,7 @@
   }
 }
 
-.formRegistration > h1 {
+.form__headline {
   font-family: "Roboto";
   font-size: 60px;
   font-weight: 700;
@@ -65,18 +65,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .formRegistration > h1 {
+  .form__headline {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .formRegistration > h1 {
+  .form__headline {
     font-size: 21px;
   }
 }
 
-.formRegistration > p {
+.form__paragraph {
   font-family: "Roboto";
   font-size: 18px;
   font-weight: 500;
@@ -87,7 +87,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  .formRegistration > p {
+  .form__paragraph {
     font-size: 11px;
     line-height: 18px;
     margin: 15px 0 20px 0;
