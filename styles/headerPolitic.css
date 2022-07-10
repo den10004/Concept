@@ -140,6 +140,10 @@
   background-color: #070b1d;
 }
 
+#open {
+  display: none;
+}
+
 @media screen and (max-width: 1850px) {
   .header__right-list {
     display: none;
@@ -155,5 +159,11 @@
   }
   .widthStylePoliticRight {
     width: 24px;
+  }
+  #open {
+    display: block;
+  }
+  .headerBotton-max {
+    display: none;
   }
 }

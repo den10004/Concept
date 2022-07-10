@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/headerPolitic.css" />
     <link rel="stylesheet" href="./styles/rules.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
     <link rel="stylesheet" href="./vendor/fonts.css" />
   </head>
   <body>
@@ -49,7 +50,12 @@
           </div>
           <div class="headerPage__right widthStylePoliticRight">
             <button class="headerBotton">
-              <img src="./images/menu.svg" alt="menu" />
+              <img id="open" src="./images/menu.svg" alt="menu" />
+              <img
+                class="headerBotton-max"
+                src="./images/menu.svg"
+                alt="menu"
+              />
             </button>
             <ul class="header__right-list">
               <li><a href="/">Just Magic</a></li>
@@ -674,5 +680,43 @@
         </div>
       </div>
     </footer>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="close" id="close">
+          <svg
+            style="cursor: pointer"
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L20.0919 20.0919"
+              stroke="#00B2FF"
+              stroke-width="2.5"
+            />
+            <path
+              d="M1 20.0918L20.0919 0.999915"
+              stroke="#00B2FF"
+              stroke-width="2.5"
+            />
+          </svg>
+        </div>
+
+        <ul class="modal-list">
+          <li><a href="/">Just Magic</a></li>
+          <li><a href="/">Блог</a></li>
+          <li><a href="/">Тарифы</a></li>
+          <li><a href="/">Создатели</a></li>
+        </ul>
+        <ul class="modal-list">
+          <li><a href="./registration.html">Регистрация</a></li>
+          <li><a href="/entry.html">Войти</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
+  <script src="./js/scriptModal.js"></script>
 </html>

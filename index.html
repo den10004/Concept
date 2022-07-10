@@ -17,7 +17,7 @@
           <div class="header-min">
             <img src="./images/logo.svg" alt="logo" />
             <button class="headerBotton">
-              <img src="./images/menu.svg" alt="menu" />
+              <img id="open" src="./images/menu.svg" alt="menu" />
             </button>
           </div>
           <div class="header-wrapper">
@@ -748,7 +748,7 @@
         <div class="expertSliderBottons">
           <div class="prev-experts buttonStyle">
             <svg
-              class="changeColor"
+              class=""
               width="23"
               height="46"
               viewBox="0 0 23 46"
@@ -764,7 +764,7 @@
 
           <div class="next-experts buttonStyle">
             <svg
-              class="changeColor"
+              class=""
               width="24"
               height="46"
               viewBox="0 0 24 46"
@@ -1003,9 +1003,47 @@
         </div>
       </div>
     </footer>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="close" id="close">
+          <svg
+            style="cursor: pointer"
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L20.0919 20.0919"
+              stroke="#00B2FF"
+              stroke-width="2.5"
+            />
+            <path
+              d="M1 20.0918L20.0919 0.999915"
+              stroke="#00B2FF"
+              stroke-width="2.5"
+            />
+          </svg>
+        </div>
+
+        <ul class="modal-list">
+          <li><a href="/">Just Magic</a></li>
+          <li><a href="/">Блог</a></li>
+          <li><a href="/">Тарифы</a></li>
+          <li><a href="/">Создатели</a></li>
+        </ul>
+        <ul class="modal-list">
+          <li><a href="./registration.html">Регистрация</a></li>
+          <li><a href="/entry.html">Войти</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/accordion.js"></script>
+  <script src="./js/scriptModal.js"></script>
   <script src="./js/swiper-bundle.js"></script>
   <script>
     var swiper = new Swiper(".expertsSwiper", {
@@ -1048,6 +1086,13 @@
     const buttonShow = document.querySelector(".tarif__show");
     const tarifShowImg = document.querySelector(".tarif__show-img");
     const blockShow = document.querySelector(".tarif__block-cost");
+
+    function showBlock() {
+      blockShow.classList.toggle("hiddenBlock");
+      tarifShowImg.classList.toggle("rotateTarif__show");
+    }
+
+    buttonShow.addEventListener("click", showBlock);
 
     function showBlock() {
       blockShow.classList.toggle("hiddenBlock");

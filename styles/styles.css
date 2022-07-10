@@ -16,6 +16,7 @@
 @import "./registration.css";
 @import "./form.css";
 @import "./entryForm.css";
+@import "./modal.css";
 
 @import "./normalize.css";
 @import "../vendor/fonts.css";
