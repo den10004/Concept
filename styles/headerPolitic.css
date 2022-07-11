@@ -126,6 +126,7 @@
   }
   .breadcrumb > li {
     margin-right: 10px;
+    list-style-type: none;
   }
 }
 
