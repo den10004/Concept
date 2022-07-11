@@ -30,7 +30,12 @@
 }
 
 .registrationBlock {
-  max-width: 1440px;
+  max-width: 1255px;
   display: flex;
   margin: 20px auto;
+}
+
+.mt50w1255 {
+  margin-top: 50px;
+  width: 1255px;
 }

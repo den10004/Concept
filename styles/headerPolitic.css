@@ -39,13 +39,20 @@
 }
 
 .headerPage__middle {
-  margin-top: 70px;
   width: calc(100% - 400px);
 }
 
+.mt70-0 {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1850px) {
+  .mt70-0 {
+    margin-top: 0px;
+  }
+}
 @media screen and (max-width: 1850px) {
   .headerPage__middle {
-    margin-top: 0;
     width: calc(100% - 200px);
   }
 }
