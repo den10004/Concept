@@ -244,15 +244,9 @@ form > p > a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  .formRegistration__checkbox-link {
-    font-size: 14px;
-  }
-}
-
 @media screen and (max-width: 425px) {
   .formRegistration__checkbox-link {
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 400;
     margin-bottom: 2px;
   }
