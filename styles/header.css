@@ -266,3 +266,7 @@
   list-style-type: none;
   width: 156px;
 }
+
+#open {
+  cursor: pointer;
+}
