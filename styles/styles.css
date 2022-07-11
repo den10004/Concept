@@ -15,6 +15,7 @@
 
 @import "./form.css";
 @import "./entryForm.css";
+@import "./registration.css";
 @import "./modal.css";
 
 @import "./normalize.css";
@@ -127,5 +128,15 @@ body {
 @media screen and (max-width: 768px) {
   .indent {
     margin: 60px auto 0;
+  }
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 425px) {
+  .mb15 {
+    margin-bottom: 7px;
   }
 }
