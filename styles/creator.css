@@ -3,7 +3,6 @@
   grid-template-columns: repeat(3, 460px);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  margin: 0 auto;
 }
 
 @media screen and (max-width: 1500px) {
@@ -17,12 +16,7 @@
   .creator__block {
     grid-template-columns: repeat(2, 289px);
     width: 598px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .creator__block {
-    margin: 0px auto;
+    /*   margin: 0 auto;*/
   }
 }
 
