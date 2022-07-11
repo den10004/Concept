@@ -16,16 +16,36 @@
   }
 }
 
-.rules__headline {
-  font-family: "Akzidenz-Grotesk Pro";
+.rules__paragraph {
+  font-family: "Roboto";
   font-weight: 400;
-  font-size: 40px;
+  font-size: 18px;
+  color: #070b1d;
+  line-height: 23px;
+}
+
+.rules__headline {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 35px;
   color: #070b1d;
   line-height: 56px;
 }
 
-.mt30 {
+.rules__text {
   margin-top: 30px;
+  font-family: "Circe";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.rules__details {
+  margin-top: 30px;
+  font-family: "Circe";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 @media screen and (max-width: 768px) {
@@ -49,4 +69,13 @@
   .rules__block {
     margin-left: 20px;
   }
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+li:before {
+  counter-increment: li;
+  content: counters(li, ".") ". ";
 }

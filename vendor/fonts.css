@@ -18,3 +18,10 @@
   font-weight: 400;
   src: url("./fonts/AkzidenzGroteskPro-Regular.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Circle";
+  font-style: "normal";
+  font-weight: 400;
+  src: url("./fonts/Circe-Regular.woff") format("woff");
+}
