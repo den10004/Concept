@@ -129,8 +129,14 @@
   color: #ffffff;
 }
 
-.text-alignCenter {
+.footer-text-alignCenter {
   text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .footer-text-alignCenter {
+    margin-top: 15px;
+  }
 }
 
 /*******************/
@@ -143,7 +149,7 @@
   .footer__main-min {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1.8fr 0.5fr;
+    grid-template-rows: 1fr 1.2fr 0.5fr;
     grid-column-gap: 76px;
     grid-row-gap: 30px;
   }
