@@ -47,24 +47,6 @@
   grid-row-gap: 0px;
 }
 
-@media screen and (max-width: 1440px) {
-  .footer__main {
-    grid-column-gap: 60px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .footer__main {
-    grid-column-gap: 20px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer__main {
-    display: none;
-  }
-}
-
 .footer__main-block1 {
   grid-area: 1 / 1 / 2 / 2;
 }
@@ -83,6 +65,24 @@
 
 .footer__main-block5 > div > hr {
   margin: 32px 0 32px 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer__main {
+    grid-column-gap: 60px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__main {
+    grid-column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer__main {
+    grid-column-gap: 5px;
+  }
 }
 
 .footerFont,
@@ -133,53 +133,35 @@
   text-align: center;
 }
 
-@media screen and (max-width: 425px) {
-  .footer-text-alignCenter {
-    margin-top: 15px;
-  }
-}
-
-/*******************/
-
-.footer__main-min {
-  display: none;
-}
-
 @media screen and (max-width: 767px) {
-  .footer__main-min {
-    display: grid;
+  .footer__main {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1.2fr 0.5fr;
-    grid-column-gap: 76px;
-    grid-row-gap: 30px;
+    grid-template-rows: repeat(2, 1fr) repeat(2, 0.3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
-}
 
-.footer__main-min-block1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.footer__main-min-block2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-.footer__main-min-block3 {
-  grid-area: 2 / 1 / 3 / 3;
-}
-.footer__main-min-block4 {
-  grid-area: 3 / 1 / 4 / 3;
-}
+  .footer__main-block1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .footer__main-block4 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .footer__main-block2 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .footer__main-block3 {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .footer__main-block5 {
+    grid-area: 4 / 1 / 5 / 3;
+  }
 
-.footer__main-min-block1 > img {
-  width: 66px;
-}
+  .footer__main-block1 > img {
+    width: 66px;
+  }
 
-.footer__main-min-block4 > hr {
-  margin: 32px 0 32px 0;
-}
-
-@media screen and (max-width: 767px) {
-  .footer__main-min-block4 > hr {
-    margin: 0px 0 20px 0;
-    width: 60%;
-    margin: 0 auto;
+  .footer__main-block5 > div > hr {
+    margin: 0 0 20px 0;
   }
 }
