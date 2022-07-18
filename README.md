@@ -1,4 +1,4 @@
 # Concept
-Вёртска макета. HTML/CSS, слайдер [swiper](https://swiperjs.com/)
+Вёрстка макета. HTML/CSS/JS, слайдер [swiper](https://swiperjs.com/)
 
 [ссылка на проект](https://den10004.github.io/Concept)
